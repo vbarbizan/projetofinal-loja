@@ -1,0 +1,112 @@
+.profile-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+  
+  .profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .circle-perfil {
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    border-radius: 50%;
+  }
+  
+  .username {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .input-container-perfil {
+    margin-top: 20px;
+    width: 600px;
+  }
+  
+  .input-box-perfil{
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .input-box span {
+    font-size: 14px;
+  }
+  
+  .edit-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .centro-perfil{
+    align-items: center;
+  }
+
+  .history-container {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  /* Título */
+  .history-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f2f2f2;
+  }
+  
+  /* Lista de histórico */
+  .history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  /* Itens de histórico */
+  .history-item {
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Imagem do produto */
+  .product-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Detalhes do produto */
+  .product-details {
+    margin-left: 15px;
+    text-align: left;
+  }
+  
+  .product-details p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .product-details strong {
+    color: #f0a500;
+  }

@@ -1,0 +1,142 @@
+/* Contêiner principal do formulário */
+.add-product-container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título */
+.title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f0a500;
+}
+
+/* Formulário */
+.add-product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Alinhamento horizontal para a seção superior */
+.form-top-section {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+/* Cada grupo de entrada */
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Campo de upload de imagem (tamanho maior) */
+
+/* Contêiner de upload de imagem */
+.image-upload-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    border: 2px dashed #f0a500;
+    border-radius: 8px;
+    background-color: #2e2e2e;
+    color: #f2f2f2;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-upload-box:hover {
+    background-color: #3a3a3a;
+}
+
+/* Input de arquivo ocupa toda a área do contêiner */
+
+/* Texto de instrução centralizado */
+.image-upload-box span {
+    font-size: 16px;
+    color: #f2f2f2;
+    z-index: 1; /* Fica acima do background, mas abaixo do input invisível */
+    pointer-events: none; /* Permite que clique passe pelo texto para o input */
+}
+
+
+/* Campo de texto */
+label {
+    font-size: 14px;
+    color: #f2f2f2;
+}
+
+.form-control {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #2e2e2e;
+    color: white;
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: #f0a500;
+}
+
+/* Campo de texto longo */
+textarea.form-control {
+    resize: none;
+}
+
+/* Botão de envio */
+.form-actions {
+    text-align: center;
+}
+
+.btn-submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f0a500;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #d18f00;
+}
+
+/* Centralização do contêiner */
+.centro-adicionar {
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.coluna-escrito {
+    display: flex;
+    flex-direction: column;
+}
+
+.tamanho-adicionar {
+    width: 450px;
+}

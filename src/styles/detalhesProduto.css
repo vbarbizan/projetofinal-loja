@@ -1,0 +1,116 @@
+.detalhes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212;
+    color: #ffffff;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .voltar-btn {
+    align-self: flex-start;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .voltar-btn:hover {
+    background-color: #ffffff;
+    color: #121212;
+  }
+  
+  .produto-detalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 1000px;
+  
+  }
+  
+  .imagem-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .produto-imagem {
+    max-width: 100%;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .produto-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px;
+  }
+  
+  .produto-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .produto-info p {
+    margin: 5px 0;
+   
+  }
+  
+ .preco {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #a5aaa6;
+    margin-top: 10px;
+  }
+  
+  .adicionar-carrinho-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #748174;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .adicionar-carrinho-btn:hover {
+    background-color: #f39c12;
+  }
+  
+  .classificacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .classificacao span {
+    font-size: 1.2rem;
+    background-color: #e53935;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  

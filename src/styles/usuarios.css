@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  border-radius: 10px;
+  background-color: #333;
+  gap: 20px;
+  max-width: 100%;
+}
+
+.tabela-usuarios{
+  background-color: #333;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #444;
+  color: #fff;
+}
+
+th {
+  font-weight: normal;
+}
+
+.delete-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,106 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f1f1f;
+  padding: 18px;
+  color: white;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.content .logo {
+  font-size: 27px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white; /* Define a cor como branca */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 36px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.auth-buttons .btn-login,
+.auth-buttons .btn-download {
+  margin-left: 18px;
+  padding: 9px 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-login {
+  background-color: #007bff;
+  color: white;
+}
+
+.search-bar-container {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+}
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  border-radius: 25px;
+  padding: 5px 15px;
+  margin-right: 20px;
+}
+
+.search-icon {
+  margin-right: 10px;
+  color: #bbb;
+  /* Cor do ícone da lupa */
+}
+
+.search-input {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.search-input::placeholder {
+  color: #888;
+  /* Cor do placeholder */
+}
+
+.menu-buttons {
+  display: flex;
+}
+
+.menu-button {
+  background: none;
+  border: 1px solid transparent;
+  color: #888;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  color: #fff;
+}
+
+.menu-button.active {
+  border: 1px solid #fff;
+  color: #fff;
+}

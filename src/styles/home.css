@@ -1,0 +1,313 @@
+/* estilização da tela home */
+.body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.header {
+  width: 100%;
+  padding: 15px ;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.content .logo {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 36px;
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.auth-buttons .btn-login,
+.auth-buttons .btn-download {
+  margin-left: 18px;
+  padding: 9px 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-login {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-download {
+  background-color: gray;
+  color: white;
+}
+
+.search-bar-container {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+}
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  border-radius: 25px;
+  padding: 5px 15px;
+  margin-right: 20px;
+}
+
+.search-icon {
+  margin-right: 10px;
+  color: #bbb;
+  /* Cor do ícone da lupa */
+}
+
+.search-input {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.search-input::placeholder {
+  color: #888;
+  /* Cor do placeholder */
+}
+
+.menu-buttons {
+  display: flex;
+}
+
+.menu-button {
+  background: none;
+  border: 1px solid transparent;
+  color: #888;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  color: #fff;
+}
+
+.menu-button.active {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.app h2 {
+  margin-left: 60px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-imgs {
+  margin-top: 40px;
+  flex-wrap: wrap;
+
+}
+
+.container-imgs2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card {
+  background-color: black;
+  border-radius: 8px;
+  width: 200px;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-content {
+  margin-top: 10px;
+}
+
+.card-content2 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-content2 .desconto {
+  text-align: center;
+  width: 35px;
+  background-color: #007bff;
+  border-radius: 30%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.price {
+  color: #ccc;
+  font-weight: bold;
+}
+
+
+/*Carrossel*/
+/* Ajuste da seção principal */
+.carousel-container {
+  margin-top: 30px;
+  display: flex;
+  height: 80vh;
+  color: #fff;
+  justify-content: center;
+  gap: 10px;
+}
+
+.highlight-content {
+  margin-top: 500px;
+  margin-right: 230px;
+}
+
+.carousel-highlight {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centralizar conteúdo */
+  max-width: 60%; /* Reduzir a largura */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* Ajuste da barra lateral */
+.carousel-sidebar {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 15px; /* Espaçamento entre os itens */
+  padding: 20px;
+  overflow-y: auto;
+  max-width: 250px; /* Ajustar largura */
+  border-radius: 10px;
+}
+
+.sidebar-item {
+  position: relative; /* Necessário para posicionar o pseudo-elemento (::after) */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.sidebar-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  z-index: 2; /* Garante que a imagem fique acima do pseudo-elemento (::after) */
+}
+
+.sidebar-item p {
+  color: #fff;
+  font-size: 0.9rem;
+  z-index: 2; /* Garante que o texto fique acima do pseudo-elemento (::after) */
+}
+.sidebar-item.active {
+  z-index: 1; /* Permite que o ::after fique no fundo */
+}
+.sidebar-item.active::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #565656;
+  z-index: -1; /* Fica atrás da imagem e do texto */
+  animation: slideTimer 5s linear; /* Temporizador de 5 segundos */
+  border-radius: 5px;
+}
+.sidebar-item.active .progress-bar .progress {
+  width: 100%; /* Progresso completo */
+}
+
+.progress-bar .progress {
+  height: 100%;
+  width: 0%; /* Começa com 0% de largura */
+  transition: width 5s linear; /* Animação de preenchimento */
+}
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+/* Temporizador */
+@keyframes slideTimer {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.product-image .product-thumbnail {
+  width: 180px;
+  height: 230px;
+}
+
+.product-nome {
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 180px;
+}
+.product-item{
+  margin-top: 20px;
+  width: 240px;
+}
